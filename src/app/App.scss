@@ -1,3 +1,5 @@
+@import '../common/styles/globals';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,5 +8,13 @@
 }
 
 body {
-  background: #FAF9F7;
+  background: $app-background;
+}
+
+a, a:visited {
+  color: $link-color;
+  transition: .15s;
+  &:focus, &:hover {
+    color: scale-color($link-color, $saturation: 50%, $lightness: 30%);
+  }
 }

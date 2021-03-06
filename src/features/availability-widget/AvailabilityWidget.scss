@@ -1,0 +1,59 @@
+@import '../../common/styles/globals';
+
+@mixin widget-font() {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#widget-section {
+  background-color: $widget-background;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #DFDFDF;
+  img {
+    height: 64px;
+  }
+  #widget-text {
+    display: flex;
+    align-items: center;
+    h2 {
+      @include widget-font;
+      margin-right: 2px;
+    }
+    p {
+      @include widget-font;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+@include breakpoint($tablet-width) {
+  #widget-section {
+    flex-direction: column;
+    height: 216px;
+    gap: 12px;
+    #widget-text {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  }
+}
+
+@include breakpoint($phone-width) {
+  #widget-section {
+    #widget-text {
+      h2 {
+        max-width: 66%;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

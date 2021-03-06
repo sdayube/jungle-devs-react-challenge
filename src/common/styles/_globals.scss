@@ -1,9 +1,12 @@
 // Primary colors
 $brand-color-primary: #00c88c;
 $hero-gradient: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
+$app-background: #faf9f7;
+$widget-background: #fff;
 
 // Text colors
 $header-text-color: #fff;
+$link-color: #5e20a4;
 
 // Interaction
 @mixin button-hover($color) {
