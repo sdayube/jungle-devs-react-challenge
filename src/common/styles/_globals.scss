@@ -1,0 +1,39 @@
+// Primary colors
+$brand-color-primary: #00c88c;
+$hero-gradient: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
+
+// Text colors
+$header-text-color: #fff;
+
+// Interaction
+@mixin button-hover($color) {
+  &:hover {
+    background: scale-color($color, $lightness: 10%);
+  }
+}
+
+@mixin link-hover($color) {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color;
+    transition: width .3s;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+// Breakpoints
+$desktop-width: 1440px;
+$tablet-width: 830px;
+$phone-width: 480px;
+
+@mixin breakpoint($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}

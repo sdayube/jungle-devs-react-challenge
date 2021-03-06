@@ -1,9 +1,9 @@
-@import '../../common/styles/variables';
+@import '../../common/styles/globals';
 
 #hero-section {
   background-blend-mode: overlay;
   background-image: url('../../common/images/hero-image.png'), $hero-gradient;
-  background-position: bottom right;
+  background-position: center center;
   background-size: cover;
   height: 616px;
 }
@@ -33,13 +33,52 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      a{
+      a {
+        @include link-hover($header-text-color);
         color: $header-text-color;
+        text-decoration: none;
       }
     }
   }
   #hero-image {
-    flex-basis: 2;
     width: 25vw;
+    transition: .1s;
+  }
+}
+
+// -------------- Media Queries --------------
+
+@include breakpoint($tablet-width) {
+  #hero-wrapper {
+    #hero-image { display: none; }
+  }
+}
+
+@include breakpoint($phone-width) {
+  #hero-section {
+    background-image: url('../../common/images/hero-image-mobile.png'), $hero-gradient;
+    height: 540px;
+  }
+
+  #hero-wrapper {
+    margin: 0 16px;
+    width: auto;
+    article {
+      margin-top: 30px;
+      h1 {
+        line-height: 32px;
+        font-size: 28px;
+        margin: 16px;
+        text-align: center;
+      }
+      p {
+        line-height: 28px;
+        font-size: 16px;
+        text-align: center;
+      }
+      div {
+        margin-top: 60px;
+      }
+    }
   }
 }
