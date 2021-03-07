@@ -3,10 +3,22 @@ $brand-color-primary: #00c88c;
 $hero-gradient: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
 $app-background: #faf9f7;
 $widget-background: #fff;
-
-// Text colors
 $header-text-color: #fff;
 $link-color: #5e20a4;
+$section-text-color: #3d3d3d;
+
+// Text
+@mixin section-header {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+@mixin section-text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
 
 // Interaction
 @mixin button-hover($color) {

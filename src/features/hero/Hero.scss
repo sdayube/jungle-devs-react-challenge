@@ -42,11 +42,8 @@
   }
   #hero-image {
     width: 25vw;
-    transition: .1s;
   }
 }
-
-// -------------- Media Queries --------------
 
 @include breakpoint($tablet-width) {
   #hero-wrapper {

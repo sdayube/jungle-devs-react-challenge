@@ -3,6 +3,7 @@ import AvailabilityWidget from '../features/availability-widget/AvailabilityWidg
 import Hero from '../features/hero/Hero';
 import './App.scss';
 import profile from '../common/images/profile-picture.png';
+import Info from '../features/info/Info';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         days={['Wednesday', 'Thursday', 'Friday']}
         workingHours={{ start: '7:30', end: '5:30' }}
       />
+      <Info />
     </div>
   );
 }

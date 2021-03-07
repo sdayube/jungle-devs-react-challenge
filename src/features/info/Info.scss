@@ -1,0 +1,23 @@
+@import '../../common/styles/globals';
+
+.dual-column-wrapper {
+  color: $section-text-color;
+  display: flex;
+  gap: 6vw;
+  justify-content: center;
+  margin: 120px 9vw 120px 16vw;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      @include section-header;
+    }
+    p {
+      @include section-text;
+    }
+  }
+  &>img {
+    width: 50%;
+  }
+}
