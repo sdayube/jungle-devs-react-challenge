@@ -1,6 +1,6 @@
 @import '../Info', '../../../common/styles/globals';
 
-#fourth-section {
+#fifth-section {
   @extend .column-wrapper;
   margin: 96px 23vw;
   .section-text {
@@ -13,25 +13,18 @@
     }
   }
   &>img {
-    width: 68.5vw;
-    margin-top: 64px
+    margin-bottom: 40px
   }
 }
 
 @include breakpoint($tablet-width) {
-  #fourth-section {
+  #fifth-section {
     @include single-column-tablet;
-    &>img {
-      display: none;
-    }
   }
 }
 
 @include breakpoint($phone-width) {
-  #fourth-section {
+  #fifth-section {
     @include single-column-phone;
-    .section-text {
-      h2 { margin: 0 19vw; }
-    }
   }
 }

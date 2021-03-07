@@ -55,8 +55,8 @@
 @mixin single-column-tablet {
   margin: 64px;
   .section-text {
-    p {
-      @include section-text;
+    h2 {
+      @include section-header-small;
     }
   }
 }

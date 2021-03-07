@@ -18,8 +18,9 @@
   @include breakpoint($phone-width) {
     @include dual-column-phone;
     margin-inline: 4.4vw;
-    .section-text
+    .section-text {
       h2 { margin: 0 19vw; }
+    }
     &>img {
       width: 86.5vw;
     }
