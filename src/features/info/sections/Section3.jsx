@@ -4,7 +4,7 @@ import './Section3.scss';
 
 function Section3() {
   return (
-    <section id="third-section" className="info-section dual-column-wrapper">
+    <section id="third-section">
       <img src={sectionImage} alt="Nanny share map example" />
       <div className="section-text">
         <h2>

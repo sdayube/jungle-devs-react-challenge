@@ -29,12 +29,6 @@
   .section-text {
     display: flex;
     flex-direction: column;
-    h2 {
-      @include section-header-small;
-    }
-    p {
-      @include section-text-large;
-    }
   }
 }
 

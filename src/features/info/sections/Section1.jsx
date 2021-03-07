@@ -4,7 +4,7 @@ import './Section1.scss';
 
 function Section1() {
   return (
-    <section id="first-section" className="info-section dual-column-wrapper">
+    <section id="first-section">
       <div className="section-text">
         <h2>
           Share your home,

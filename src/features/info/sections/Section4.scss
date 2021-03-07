@@ -1,0 +1,34 @@
+@import '../Info', '../../../common/styles/globals';
+
+#fourth-section {
+  @extend .column-wrapper;
+  margin: 96px 23vw;
+  .section-text {
+    gap: 40px;
+    h2 {
+      @include section-header;
+    }
+    p {
+      @include section-text;
+    }
+  }
+  &>img {
+    width: 68.5vw;
+    margin-top: 64px
+  }
+}
+
+@include breakpoint($tablet-width) {
+  #fourth-section {
+    @include single-column-tablet;
+    &>img {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint($phone-width) {
+  #fourth-section {
+    @include single-column-phone;
+  }
+}
