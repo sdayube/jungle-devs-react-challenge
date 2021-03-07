@@ -3,21 +3,127 @@
 .dual-column-wrapper {
   color: $section-text-color;
   display: flex;
-  gap: 6vw;
+  gap: 4vw;
   justify-content: center;
   margin: 120px 9vw 120px 16vw;
   .section-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     h2 {
       @include section-header;
     }
     p {
       @include section-text;
+      margin: 40px 0;
     }
   }
   &>img {
-    width: 50%;
+    width: 53%;
+    align-self: center;
+  }
+}
+
+.column-wrapper {
+  align-items: center;
+  color: $section-text-color;
+  display: flex;
+  flex-direction: column;
+  margin: 64px auto;
+  text-align: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      @include section-header-small;
+    }
+    p {
+      @include section-text-large;
+      margin: 16px 0;
+    }
+  }
+}
+
+#newsletter-forms {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  input {
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 0 20px;
+    height: 44px;
+  }
+  button {
+    @include button($brand-color-primary, $header-text-color) {
+      height: 44px;
+      margin: 0;
+    };
+  }
+}
+
+#third-section {
+  gap: 3vw;
+  margin: 96px 16vw;
+  img { width: 31.5vw; }
+}
+
+@include breakpoint($tablet-width) {
+  .dual-column-wrapper {
+    flex-direction: column-reverse;
+    gap: 24px;
+    margin: 64px 10vw;
+    text-align: center;
+    .section-text {
+      h2 { @include section-header-small }
+    }
+    &>img {
+      width: 70vw;
+    }
+  }
+
+  .column-wrapper {
+    margin: 64px;
+    .section-text {
+      p {
+        @include section-text;
+      }
+      #newsletter-forms {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  #third-section {
+    flex-direction: column;
+    gap: 40px;
+    &>img {
+      width: 60vw;
+    }
+  }
+}
+
+@include breakpoint($phone-width) {
+  .dual-column-wrapper {
+    margin: 64px 4.5vw;
+    .section-text {
+      p {
+        margin: 16px 0 24px;
+      }
+    }
+    &>img {
+      width: 85vw;
+    }
+  }
+
+  .column-wrapper {
+    margin: 64px 4.5vw;
+  }
+
+  #third-section {
+    margin: 64px 4.5vw;
+    &>img {
+      width: 75vw;
+    }
   }
 }

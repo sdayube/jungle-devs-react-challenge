@@ -1,0 +1,15 @@
+@import '../styles/globals';
+
+.section-divider {
+  width: 54.5vw;
+  height: 2px;
+  background-color: #DFDFDF;
+  margin: auto;
+  transition: 0.5s;
+  @include breakpoint($tablet-width) {
+    width: 74.5vw;
+  }
+  @include breakpoint($phone-width) {
+    width: 90vw;
+  }
+}

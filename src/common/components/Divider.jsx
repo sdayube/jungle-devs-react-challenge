@@ -1,7 +1,8 @@
 import React from 'react';
+import './Divider.scss';
 
 export default function Divider() {
   return (
-    <div style={{ width: '54.5vw', border: '2px solid #DFDFDF', margin: 'auto' }} />
+    <div className="section-divider" />
   );
 }

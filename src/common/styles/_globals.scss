@@ -14,17 +14,37 @@ $section-text-color: #3d3d3d;
   font-weight: 500;
 }
 
+@mixin section-header-small {
+  @include section-header;
+  font-size: 22px;
+}
+
 @mixin section-text {
   font-size: 16px;
   line-height: 28px;
   font-weight: 500;
 }
 
+@mixin section-text-large {
+  @include section-text;
+  font-size: 18px;
+}
+
+
 // Interaction
-@mixin button-hover($color) {
+@mixin button ($color, $text-color) {
+  color: $text-color;
+  background: $color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 12px 22px;
+  transition: 200ms;
   &:hover {
     background: scale-color($color, $lightness: 10%);
   }
+  @content
 }
 
 @mixin link-hover($color) {
@@ -36,7 +56,6 @@ $section-text-color: #3d3d3d;
     background: $color;
     transition: width .3s;
   }
-
   &:hover:after {
     width: 100%;
   }
@@ -44,7 +63,7 @@ $section-text-color: #3d3d3d;
 
 // Breakpoints
 $desktop-width: 1440px;
-$tablet-width: 830px;
+$tablet-width: 930px;
 $phone-width: 480px;
 
 @mixin breakpoint($width) {
