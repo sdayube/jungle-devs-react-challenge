@@ -1,0 +1,27 @@
+@import '../info/Info', '../../common/styles/globals';
+
+#first-section {
+  @extend .dual-wrapper;
+  gap: 4vw;
+  margin: 120px 9vw 120px 16vw;
+  &>img {
+    width: 53%;
+  }
+
+  @include breakpoint($tablet-width) {
+    @include dual-column-tablet;
+    flex-direction: column-reverse;
+    gap: 24px;
+    &>img {
+      width: 70vw;
+    }
+  }
+
+  @include breakpoint($phone-width) {
+    @include dual-column-phone;
+    &>img {
+      width: 85vw;
+    }
+  }
+}
+

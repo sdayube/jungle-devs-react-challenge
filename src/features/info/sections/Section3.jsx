@@ -5,7 +5,7 @@ import './Section3.scss';
 function Section3() {
   return (
     <section id="third-section">
-      <img src={sectionImage} alt="Nanny share map example" />
+      <img src={sectionImage} alt="Nanny payment share example" />
       <div className="section-text">
         <h2>
           Shared payments made simple

@@ -1,9 +1,7 @@
 import React from 'react';
-import AvailabilityWidget from '../features/availability-widget/AvailabilityWidget';
-import Hero from '../features/hero/Hero';
-import './App.scss';
+import { Hero, AvailabilityWidget, Info, Footer } from '../features';
 import profile from '../common/images/profile-picture.png';
-import Info from '../features/info/Info';
+import './App.scss';
 
 function App() {
   return (
@@ -18,6 +16,7 @@ function App() {
         workingHours={{ start: '7:30', end: '5:30' }}
       />
       <Info />
+      <Footer />
     </div>
   );
 }

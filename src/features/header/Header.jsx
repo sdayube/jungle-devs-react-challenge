@@ -1,5 +1,5 @@
 import React from 'react';
-import badge from '../../common/vectors/badge.svg';
+import { badge } from '../../common/vectors';
 import './Header.scss';
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
     <header>
       <div id="left-header-wrapper">
         <img src={badge} alt="logo" />
-        <nav>
+        <nav aria-label="primary">
           <ul id="nav-list">
             <li><a href="#">Create Your Nanny Share</a></li>
             <li><a href="#">Browse Shares</a></li>
