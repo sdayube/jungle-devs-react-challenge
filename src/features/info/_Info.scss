@@ -1,0 +1,72 @@
+@import '../../common/styles/globals';
+
+.dual-wrapper {
+  color: $section-text-color;
+  display: flex;
+  justify-content: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      @include section-header;
+    }
+    p {
+      @include section-text;
+      margin: 40px 0;
+    }
+  }
+  &>img {
+    align-self: center;
+  }
+}
+
+.column-wrapper {
+  align-items: center;
+  color: $section-text-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      @include section-header-small;
+    }
+    p {
+      @include section-text-large;
+    }
+  }
+}
+
+@mixin dual-column-tablet {
+  margin: 64px 10vw;
+  text-align: center;
+  .section-text {
+    h2 { @include section-header-small }
+  }
+  &>img {
+    width: 70vw;
+  }
+}
+
+@mixin dual-column-phone {
+  margin: 64px 4.5vw;
+  .section-text {
+    p {
+      margin: 16px 0 24px;
+    }
+  }
+}
+
+@mixin single-column-tablet {
+  margin: 64px;
+  .section-text {
+    p {
+      @include section-text;
+    }
+  }
+}
+
+@mixin single-column-phone {
+  margin: 64px 4.5vw;
+}

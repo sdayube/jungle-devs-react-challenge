@@ -1,0 +1,28 @@
+@import '../Info', '../../../common/styles/globals';
+
+#third-section {
+  @extend .dual-wrapper;
+  gap: 3vw;
+  margin: 96px 16vw;
+  &>img { width: 31.5vw; }
+
+  @include breakpoint($tablet-width) {
+    @include dual-column-tablet;
+    flex-direction: column;
+    gap: 40px;
+    &>img {
+      width: 60vw;
+    }
+  }
+
+  @include breakpoint($phone-width) {
+    @include dual-column-phone;
+    margin-inline: 4.4vw;
+    .section-text
+      h2 { margin: 0 19vw; }
+    &>img {
+      width: 86.5vw;
+    }
+  }
+}
+

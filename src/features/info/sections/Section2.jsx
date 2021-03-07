@@ -1,4 +1,5 @@
 import React from 'react';
+import './Section2.scss';
 
 function Section2() {
   return (
@@ -10,8 +11,8 @@ function Section2() {
           available in your area!
         </p>
         <forms id="newsletter-forms">
-          <input placeholder="Your name" />
-          <input placeholder="Your email" />
+          <input placeholder="Your name" required />
+          <input placeholder="Your email" required />
           <button type="submit">Send</button>
         </forms>
       </div>

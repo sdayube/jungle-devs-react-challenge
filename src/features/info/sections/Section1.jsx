@@ -1,5 +1,6 @@
 import React from 'react';
 import sectionImage from '../../../common/images/image-section-1.png';
+import './Section1.scss';
 
 function Section1() {
   return (

@@ -1,0 +1,42 @@
+@import '../Info', '../../../common/styles/globals';
+
+#second-section {
+  @extend .column-wrapper;
+  margin: 64px auto;
+  p {
+    margin: 16px 0;
+  }
+  #newsletter-forms {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    input {
+      border: 1px solid #DFDFDF;
+      border-radius: 4px;
+      padding: 0 20px;
+      height: 44px;
+    }
+    button {
+      @include button($brand-color-primary, $header-text-color) {
+        height: 44px;
+        margin: 0;
+      };
+    }
+  }
+}
+
+@include breakpoint($tablet-width) {
+  #second-section {
+    @include single-column-tablet;
+    #newsletter-forms {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@include breakpoint($phone-width) {
+  #second-section {
+    @include single-column-phone;
+  }
+}
