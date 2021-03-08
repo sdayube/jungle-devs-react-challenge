@@ -13,3 +13,10 @@
     width: 90vw;
   }
 }
+
+.hidden-start {
+  display: none;
+  @include breakpoint($tablet-width) {
+    display: block;
+  }
+}

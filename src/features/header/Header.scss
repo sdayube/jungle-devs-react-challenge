@@ -68,5 +68,6 @@ header {
 @include breakpoint($phone-width) {
   #right-header-wrapper {
     #sign-in-button { display: none; }
+    margin: 0 16px;
   }
 }

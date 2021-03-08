@@ -1,11 +1,13 @@
 // Primary colors
 $brand-color-primary: #00c88c;
+$brand-color-secondary: #5e20a4;
 $hero-gradient: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
 $app-background: #faf9f7;
 $widget-background: #fff;
 $header-text-color: #fff;
 $link-color: #5e20a4;
 $section-text-color: #3d3d3d;
+$footer-background: #fff;
 
 // Text
 @mixin section-header {
@@ -22,6 +24,11 @@ $section-text-color: #3d3d3d;
 @mixin section-text {
   font-size: 16px;
   line-height: 28px;
+}
+
+@mixin section-text-small {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @mixin section-text-large {
