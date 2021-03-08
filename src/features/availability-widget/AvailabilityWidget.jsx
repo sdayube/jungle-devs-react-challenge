@@ -1,11 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import './AvailabilityWidget.scss';
 
-function AvailabilityWidget(props) {
+export default function AvailabilityWidget() {
+  const availableNannies = useSelector((state) => state.availableNannies);
+  const nannyRandomizer = availableNannies[Math.floor(Math.random() * availableNannies.length)];
   const {
     profile, name, link, neighborhood, days, workingHours,
-  } = props;
+  } = nannyRandomizer;
 
   return (
     <article id="widget-section">
@@ -21,17 +23,3 @@ function AvailabilityWidget(props) {
     </article>
   );
 }
-
-AvailabilityWidget.propTypes = {
-  days: PropTypes.arrayOf(PropTypes.string).isRequired,
-  link: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  neighborhood: PropTypes.string.isRequired,
-  profile: PropTypes.string.isRequired,
-  workingHours: PropTypes.shape({
-    end: PropTypes.string,
-    start: PropTypes.string,
-  }).isRequired,
-};
-
-export default AvailabilityWidget;
