@@ -1,6 +1,6 @@
 # Jungle Devs React Challenge
 
-This project was developed by me, Silvio Dayube, as a technical challenge from Jungle Devs. THe main objective was to replicate a ready-made design shared through Figma.
+This project was developed by me, Silvio Dayube, as a technical challenge from Jungle Devs. The main objective was to replicate a ready-made design shared through Figma.
 
 ## How to run the development build?
 
@@ -23,4 +23,4 @@ I really enjoyed building this project. It was the perfect opportunity for me to
 
 It was also my first time building a landing page with React, since we focus more on SPAs and applications with more complex functionalities at the Trybe course, so my last time building a landing page was with vanilla JS and HTML, when i created my [portfolio page](https://sdayube.github.io) on GitHub Pages.
 
-I feel I have done a precise job replicating the design and making it responsive, and I also tried to keep a good level of modularity within the code to make it easier to change or maintain. Overall, I'm proud of what I build and think I did a good enough job!
+I feel I have done a precise job replicating the design and making it responsive, and I also tried to keep a good level of modularity within the code to make it easier to change or maintain. Overall, I'm proud of what I built and think I did a good enough job!
