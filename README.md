@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Jungle Devs React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed by me, Silvio Dayube, as a technical challenge from Jungle Devs. THe main objective was to replicate a ready-made design shared through Figma.
 
-## Available Scripts
+## How to run the development build?
 
-In the project directory, you can run:
+To run the development build, first clone the repo using the `git clone` command on your favorite CLI. Then, considering that you already have Node installed and updated, use `npm install` to install the project dependencies. This may take a while, but after it's done you'll  be ready to run the project in development mode and alter it as you see fit!
 
-### `npm start`
+To finally run the project, simply run `npm start`. Since this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), Babel and Webpack will already be configured to make their magic work behind the screens, giving you a local host address to access the page, with hot reloading as a plus.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to create a production build?
 
-### `npm test`
+To create a production build, run the `npm run build` command on your CLI. Then you'll have a production ready build in the `build` folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As per Create React App's instructions, this method correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. All that is missing then is the deployment step, which is out of this project's scope!
 
-### `npm run build`
+See the Create React App [deployment](https://facebook.github.io/create-react-app/docs/deployment) section if you are interested in learning more.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Feedbacks and final thoughts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I really enjoyed building this project. It was the perfect opportunity for me to start learning `axios`, since it was mentioned to be important in the interview, and to apply my recently acquired `Sass` knowledge in a challenge in which CSS preprocessing actually makes sense.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It was also my first time building a landing page with React, since we focus more on SPAs and applications with more complex functionalities at the Trybe course, so my last time building a landing page was with vanilla JS and HTML, when i created my [portfolio page](https://sdayube.github.io) on GitHub Pages.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I feel I have done a precise job replicating the design and making it responsive, and I also tried to keep a good level of modularity within the code to make it easier to change or maintain. Overall, I'm proud of what I build and think I did a good enough job!
