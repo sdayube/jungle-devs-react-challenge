@@ -41,9 +41,9 @@ function Section2() {
         <form id="newsletter-forms">
           <input placeholder="Your name" value={name} onChange={(event) => setName(event.target.value)} required />
           <input type="email" placeholder="Your email" value={email} onChange={(event) => setEmail(event.target.value)} required />
-          {validation ? null : <span style={{ color: 'red', fontSize: '12px' }}>Preencha os campos corretamente</span>}
           <button type="submit" onClick={sendAction}>Send</button>
         </form>
+        {validation ? null : <span style={{ color: 'red', fontSize: '12px', lineHeight: 3 }}>Please fill in the input fields correctly</span>}
       </div>
     </section>
   );
